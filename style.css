@@ -245,6 +245,133 @@ button[type="submit"]:hover {
     box-shadow: 0px 4px 15px rgba(0, 100, 0, 0.3);
 }
 
+
+/* Services Section */
+#services i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#services i:hover {
+    transform: scale(1.2);
+    color: #006400;
+}
+
+#services h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #006400;
+}
+
+#services p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #006400;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #9acd32;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 100, 0, 0.3);
+}
+
+/* FAQ Section */
+.accordion-button {
+    background-color: #006400;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #9acd32;
+}
+
+#certifications i {
+    transition: transform 0.3s ease;
+}
+
+#certifications i:hover {
+    transform: scale(1.2);
+    color: #006400;
+}
+
+#certifications h5 {
+    margin-top: 1rem;
+    color: #006400;
+}
+
+#tools i {
+    transition: transform 0.3s ease;
+}
+
+#tools i:hover {
+    transform: scale(1.2);
+    color: #006400;
+}
+
+#tools p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 100, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fun-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+#fun-facts ul li {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+#fun-facts ul li:before {
+    content: "• ";
+    color: #006400;
+    font-weight: bold;
+}
+
+
+
+#skillsCanvas {
+    max-width: 100%; /* Makes the canvas responsive */
+    margin: 1rem auto;
+}
+
+
 /* Footer */
 footer {
     background-color: #006400;
@@ -261,3 +388,5 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
+
