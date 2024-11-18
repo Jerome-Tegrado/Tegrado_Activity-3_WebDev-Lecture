@@ -7,6 +7,22 @@ body {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 10px !important;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f8f9fa !important;
+    border-radius: 10px !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2b302b !important;
+}
+
+
+
+
 /* Navbar */
 .navbar-brand {
     display: flex;
@@ -23,6 +39,16 @@ body {
     transition: color 0.3s ease;
 }
 
+.nav-item a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #9acd32 !important;
+    transform: scale(1.1);
+}
+
+
 /* Hero Section */
 .hero-section {
     background: linear-gradient(to bottom, #006400, #9acd32);
@@ -33,6 +59,7 @@ body {
     flex-direction: column;
     color: #fff;
 }
+
 
 .hero-section h1,
 .hero-section p {
@@ -364,12 +391,65 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
+.testimonial {
+    background-color: #f9f9f9;
+    border-left: 4px solid #4caf50;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.testimonial blockquote {
+    margin: 0;
+    padding: 0;
+}
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
 
 
 #skillsCanvas {
     max-width: 100%; /* Makes the canvas responsive */
     margin: 1rem auto;
 }
+
+/* Hover Effects for Personal Attributes Icons */
+#soft-skills i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#soft-skills i:hover {
+    transform: scale(1.3);
+    color: #9acd32;
+}
+
+/* Optional: Add hover effects for titles and descriptions */
+#soft-skills h5:hover {
+    color: #006400;
+    transition: color 0.3s ease;
+}
+
+#soft-skills p:hover {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects for Progress Bars */
+.progress-bar {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.progress-bar:hover {
+    box-shadow: 0px 0px 15px rgba(0, 100, 0, 0.5); /* Greenish glow effect */
+    transform: scaleX(1.02); /* Slight horizontal expansion for emphasis */
+}
+
+section {
+    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+}
+
 
 
 /* Footer */

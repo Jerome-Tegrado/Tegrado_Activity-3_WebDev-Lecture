@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerome's Portfolio</title>
-    <!-- Bootstrap and Font Awesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">
@@ -32,9 +29,7 @@
             </div>
         </div>
     </nav>
-    
 
-    <!-- Hero Section -->
     <header id="home" class="hero-section text-center text-white d-flex align-items-center justify-content-center">
         <div>
             <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
@@ -43,13 +38,11 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about" class="container my-5">
         <h2 class="section-title"><i class="fas fa-user text-success"></i> About Me</h2>
         <p>Hi, I'm Jerome Tegrado, a passionate web developer and a third-year Information Systems student at TUP. I enjoy crafting responsive and engaging web designs while solving real-world challenges through technology.</p>
     </section>
 
-    <!-- Personal Attribute Section -->
     <section id="soft-skills" class="container my-5">
         <h2 class="section-title"><i class="fas fa-handshake text-success"></i> Personal Attributes</h2>
         <div class="row text-center">
@@ -88,19 +81,14 @@
         </div>
     </section>
 
-
-    
     <section id="skills-chart" class="container my-5">
         <h3 class="section-title"><i class="fas fa-chart-pie"></i> Daily Routine</h3>
         <canvas id="skillsCanvas" width="400" height="400"></canvas>
     </section>
 
-    
-   
     <section id="skills" class="container my-5">
         <h3 class="section-title"><i class="fas fa-tools"></i> My Skills</h3>
         <div class="row">
-            <!-- Academic Skills -->
             <div class="col-md-6">
                 <h5>Research and Analysis</h5>
                 <div class="progress mb-3">
@@ -119,8 +107,6 @@
                     <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                 </div>
             </div>
-            
-            <!-- Technical Skills -->
             <div class="col-md-6">
                 <h5>HTML/CSS/JavaScript</h5>
                 <div class="progress mb-3">
@@ -140,8 +126,6 @@
                 </div>
             </div>
         </div>
-    
-        <!-- Additional Skills -->
         <div class="row mt-5">
             <div class="col-md-6">
                 <h5>Critical Thinking</h5>
@@ -165,429 +149,369 @@
             </div>
         </div>
     </section>
-    
-
-
-<!-- Projects Section -->
-<section id="projects" class="container my-5">
-    <h2 class="section-title"><i class="fas fa-briefcase text-success"></i> Projects</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card shadow project-card">
-                <img src="assets/images/Project1.PNG" class="card-img-top" alt="Project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Personal Blog Website</h5>
-                    <p class="card-text">A responsive personal blog that highlights my journey, interests, and experiences.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow project-card">
-                <img src="assets/images/Project2.PNG" class="card-img-top" alt="Project 2">
-                <div class="card-body">
-                    <h5 class="card-title">Portfolio Website</h5>
-                    <p class="card-text">A professional portfolio showcasing my skills, projects, and achievements.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow project-card">
-                <img src="assets/images/Project3.PNG" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                    <h5 class="card-title">TUP Mobile Application UI</h5>
-                    <p class="card-text">A Figma project featuring UI/UX designs for TUP’s Enrollment System.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="portfolio" class="container my-5">
-    <h3 class="section-title"><i class="fas fa-folder-open"></i> Portfolio</h3>
-    <div class="row">
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-4">
-            <div class="card shadow">
-                <img src="assets/images/Portfolio1.PNG" class="card-img-top" alt="Figma Decision Support Systems Project">
-                <div class="card-body">
-                    <h5 class="card-title">Figma Decision Support Systems</h5>
-                    <p class="card-text">Created wireframe modules for Decision Support System features during a collaborative class project.</p>
-                    <a href="https://www.figma.com/design/gRY7Esph2d8COO985aNiXg/DSS-Sketch?node-id=167-172&node-type=canvas&t=CV6q7PtnLkN5EBur-0" 
-                       class="btn btn-success" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-4">
-            <div class="card shadow">
-                <img src="assets/images/Portfolio2.png" class="card-img-top" alt="QueueEase Prototype System">
-                <div class="card-body">
-                    <h5 class="card-title">QueueEase Prototype System</h5>
-                    <p class="card-text">Developed a Queue Management System prototype to improve time and queue handling.</p>
-                    <a href="https://github.com/Jerome-Tegrado/QueueEase-Revised" class="btn btn-success" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-4">
-            <div class="card shadow">
-                <img src="assets/images/Portfolio3.PNG" class="card-img-top" alt="IT Audit Report Project">
-                <div class="card-body">
-                    <h5 class="card-title">IT Audit Report</h5>
-                    <p class="card-text">Performed an IT audit for a barangay in Pasay City to assess and improve their IT systems and processes.</p>
-                    <a href="https://docs.google.com/document/d/12df_35INDU0YmA2OqaSQoKOudOZTRSWagXnVFlrs8_A/edit?usp=sharing" 
-                       class="btn btn-success" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
- <!-- Testimonials Section -->
- <section id="testimonials" class="container my-5">
-    <h2 class="section-title"><i class="fas fa-comments text-success"></i> Testimonials</h2>
-    <div class="testimonial">
-        <blockquote>
-            <p>"Jerome is an excellent groupmate who excels at collaborative group work. He always takes the initiative and ensures our tasks are completed efficiently."</p>
-            <cite>- Classmate</cite>
-        </blockquote>
-    </div>
-    <div class="testimonial">
-        <blockquote>
-            <p>"Jerome is a hardworking professional who consistently delivers on every task he is assigned. His dedication and reliability are invaluable in the workplace."</p>
-            <cite>- Employer</cite>
-        </blockquote>
-    </div>    
-</section>
-
-<section id="certifications" class="container my-5">
-    <h3 class="section-title"><i class="fas fa-certificate"></i> Certifications & Achievements</h3>
-    <div class="row text-center">
-        <!-- DOST Scholarship -->
-        <div class="col-md-4">
-            <i class="fas fa-graduation-cap fa-3x text-success"></i>
-            <h5 class="mt-3">DOST Scholarship</h5>
-            <p>Issued: 2022</p>
-        </div>
-        <!-- Dean's Lister -->
-        <div class="col-md-4">
-            <i class="fas fa-book-open fa-3x text-success"></i>
-            <h5 class="mt-3">Dean's Lister</h5>
-            <p>Issued: 1st-2nd Year</p>
-        </div>
-        <!-- President's Lister -->
-        <div class="col-md-4">
-            <i class="fas fa-star fa-3x text-success"></i>
-            <h5 class="mt-3">President's Lister</h5>
-            <p>Issued: 1st-2nd Year</p>
-        </div>
-    </div>
-</section>
-
-  <!-- Timeline Section -->
-  <section id="timeline" class="container my-5">
-    <h2 class="section-title"><i class="fas fa-calendar text-success"></i> Timeline</h2>
-    <ul class="timeline">
-        <li><strong>2024:</strong> Currently at my third year of college.</li>
-        <li><strong>2024:</strong> Successfully completed my second year of college.</li>
-        <li><strong>2023:</strong> Successfully completed my first year of college.</li>
-        <li><strong>2022:</strong> Began the Information Systems program at TUP.</li>
-        <li><strong>2022:</strong> Graduated from Senior High School at Parañaque Science High School.</li>
-        <li><strong>2020:</strong> Graduated from High School at Nativity Integrated School.</li>
-    </ul>
-</section>
-
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container my-5">
-        <h2 class="section-title"><i class="fas fa-images text-success"></i> Gallery</h2>
+        
+    </section>
+    <section id="projects" class="container my-5">
+        <h2 class="section-title"><i class="fas fa-briefcase text-success"></i> Projects</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
-                <img src="assets/images/Photo1.jpeg" class="img-fluid rounded shadow hover-scale" alt="Gallery Photo 1">
+            <div class="col-md-4">
+                <div class="card shadow project-card">
+                    <img src="assets/images/Project1.PNG" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Blog Website</h5>
+                        <p class="card-text">A responsive personal blog that highlights my journey, interests, and experiences.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="assets/images/Photo2.png" class="img-fluid rounded shadow hover-scale" alt="Gallery Photo 2">
+            <div class="col-md-4">
+                <div class="card shadow project-card">
+                    <img src="assets/images/Project2.PNG" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A professional portfolio showcasing my skills, projects, and achievements.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="assets/images/Photo3.jpg" class="img-fluid rounded shadow hover-scale" alt="Gallery Photo 3">
+            <div class="col-md-4">
+                <div class="card shadow project-card">
+                    <img src="assets/images/Project3.PNG" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">TUP Mobile Application UI</h5>
+                        <p class="card-text">A Figma project featuring UI/UX designs for TUP’s Enrollment System.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-  
-    
-
-    <section id="services" class="container my-5">
-        <h3 class="section-title"><i class="fas fa-briefcase"></i> Services</h3>
-        <div class="row text-center">
-            <!-- Web Development -->
-            <div class="col-md-4">
-                <i class="fas fa-laptop-code fa-4x text-success"></i>
-                <h5 class="mt-3">Web Development</h5>
-                <p>Building responsive and modern websites tailored to your needs.</p>
-            </div>
-            <!-- UI/UX Design -->
-            <div class="col-md-4">
-                <i class="fas fa-paint-brush fa-4x text-success"></i>
-                <h5 class="mt-3">UI/UX Design</h5>
-                <p>Creating intuitive and visually appealing user interfaces.</p>
-            </div>
-            <!-- IT Support -->
-            <div class="col-md-4">
-                <i class="fas fa-tools fa-4x text-success"></i>
-                <h5 class="mt-3">IT Support</h5>
-                <p>Providing technical assistance to ensure smooth system functionality.</p>
-            </div>
-        </div>
-        <div class="row text-center mt-4">
-            <!-- Data Analysis -->
-            <div class="col-md-4">
-                <i class="fas fa-chart-line fa-4x text-success"></i>
-                <h5 class="mt-3">Data Analysis</h5>
-                <p>Analyzing and interpreting data to drive informed decisions.</p>
-            </div>
-            <!-- System Development -->
-            <div class="col-md-4">
-                <i class="fas fa-cogs fa-4x text-success"></i>
-                <h5 class="mt-3">System Development</h5>
-                <p>Designing and building efficient systems for your organization.</p>
-            </div>
-            <!-- SEO Optimization -->
-            <div class="col-md-4">
-                <i class="fas fa-search fa-4x text-success"></i>
-                <h5 class="mt-3">SEO Optimization</h5>
-                <p>Optimizing websites for better visibility in search engine results.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="bootcamps" class="container my-5">
-        <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Bootcamps of Interest</h3>
+    <section id="portfolio" class="container my-5">
+        <h3 class="section-title"><i class="fas fa-folder-open"></i> Portfolio</h3>
         <div class="row">
-            <!-- Bootcamp 1 -->
             <div class="col-md-4">
                 <div class="card shadow">
-                    <img src="assets/images/Bootcamp1.PNG" class="card-img-top" alt="ChatGPT & Digital Marketing Bootcamp">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">ChatGPT & Digital Marketing</h5>
-                        <p class="card-text">Learn to leverage AI tools like ChatGPT and MidJourney for marketing strategies.</p>
+                    <img src="assets/images/Portfolio1.PNG" class="card-img-top" alt="Figma Decision Support Systems Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Figma Decision Support Systems</h5>
+                        <p class="card-text">Created wireframe modules for Decision Support System features during a collaborative class project.</p>
+                        <a href="https://www.figma.com/design/gRY7Esph2d8COO985aNiXg/DSS-Sketch?node-id=167-172&node-type=canvas&t=CV6q7PtnLkN5EBur-0" class="btn btn-success" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
-            <!-- Bootcamp 2 -->
             <div class="col-md-4">
                 <div class="card shadow">
-                    <img src="assets/images/Bootcamp2.PNG" class="card-img-top" alt="Python Programming Bootcamp">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Python Programming Bootcamp</h5>
-                        <p class="card-text">Master Python from basics to advanced, building applications.</p>
+                    <img src="assets/images/Portfolio2.png" class="card-img-top" alt="QueueEase Prototype System">
+                    <div class="card-body">
+                        <h5 class="card-title">QueueEase Prototype System</h5>
+                        <p class="card-text">Developed a Queue Management System prototype to improve time and queue handling.</p>
+                        <a href="https://github.com/Jerome-Tegrado/QueueEase-Revised" class="btn btn-success" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
-            <!-- Bootcamp 3 -->
             <div class="col-md-4">
                 <div class="card shadow">
-                    <img src="assets/images/Bootcamp3.PNG" class="card-img-top" alt="Unity Game Development Bootcamp">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Unity Game Development</h5>
-                        <p class="card-text">Create 2D games using Unity and C#, learning game design and programming fundamentals.</p>
+                    <img src="assets/images/Portfolio3.PNG" class="card-img-top" alt="IT Audit Report Project">
+                    <div class="card-body">
+                        <h5 class="card-title">IT Audit Report</h5>
+                        <p class="card-text">Performed an IT audit for a barangay in Pasay City to assess and improve their IT systems and processes.</p>
+                        <a href="https://docs.google.com/document/d/12df_35INDU0YmA2OqaSQoKOudOZTRSWagXnVFlrs8_A/edit?usp=sharing" class="btn btn-success" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
-    <section id="tools" class="container my-5">
-        <h3 class="section-title"><i class="fas fa-tools"></i> Tools & Technologies</h3>
-        <div class="row text-center">
-            <!-- Visual Studio Code -->
-            <div class="col-md-3">
-                <i class="fas fa-code fa-3x text-secondary"></i>
-                <p>Visual Studio Code</p>
-            </div>
-            <!-- GitHub -->
-            <div class="col-md-3">
-                <i class="fab fa-github fa-3x text-secondary"></i>
-                <p>GitHub</p>
-            </div>
-            <!-- Figma -->
-            <div class="col-md-3">
-                <i class="fab fa-figma fa-3x text-secondary"></i>
-                <p>Figma</p>
-            </div>
-            <!-- HTML -->
-            <div class="col-md-3">
-                <i class="fab fa-html5 fa-3x text-secondary"></i>
-                <p>HTML</p>
-            </div>
-        </div>
-        <div class="row text-center mt-4">
-            <!-- CSS -->
-            <div class="col-md-3">
-                <i class="fab fa-css3-alt fa-3x text-secondary"></i>
-                <p>CSS</p>
-            </div>
-            <!-- JavaScript -->
-            <div class="col-md-3">
-                <i class="fab fa-js-square fa-3x text-secondary"></i>
-                <p>JavaScript</p>
-            </div>
-            <!-- C -->
-            <div class="col-md-3">
-                <i class="fas fa-terminal fa-3x text-secondary"></i>
-                <p>C</p>
-            </div>
-            <!-- C++ -->
-            <div class="col-md-3">
-                <i class="fas fa-code fa-3x text-secondary"></i>
-                <p>C++</p>
-            </div>
-        </div>
-        <div class="row text-center mt-4">
-            <!-- SQL -->
-            <div class="col-md-3">
-                <i class="fas fa-database fa-3x text-secondary"></i>
-                <p>SQL</p>
-            </div>
-            <!-- Node.js -->
-            <div class="col-md-3">
-                <i class="fab fa-node-js fa-3x text-secondary"></i>
-                <p>Node.js</p>
-            </div>
-            <!-- Code::Blocks -->
-            <div class="col-md-3">
-                <i class="fas fa-laptop-code fa-3x text-secondary"></i>
-                <p>Code::Blocks</p>
-            </div>
-            <!-- Bootstrap -->
-            <div class="col-md-3">
-                <i class="fab fa-bootstrap fa-3x text-secondary"></i>
-                <p>Bootstrap</p>
-            </div>
-        </div>
-    </section>
-    
-    
-    
 
-    <section id="fun-facts" class="container my-5">
-        <h3 class="section-title"><i class="fas fa-smile"></i> Fun Facts</h3>
-        <ul>
-            <li>I am an Ambivert.</li>
-            <li>I am a very Awkward Person.</li>
-            <li>I play Valorant.</li>
-            <li>I enjoy Music.</li>
-            <li>I love exploring new coffee shops and trying unique brews.</li>
+    <section id="testimonials" class="container my-5">
+        <h2 class="section-title"><i class="fas fa-comments text-success"></i> Testimonials</h2>
+        <div class="testimonial">
+            <blockquote>
+                <p>"Jerome is an excellent groupmate who excels at collaborative group work. He always takes the initiative and ensures our tasks are completed efficiently."</p>
+                <cite>- Classmate</cite>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>"Jerome is a hardworking professional who consistently delivers on every task he is assigned. His dedication and reliability are invaluable in the workplace."</p>
+                <cite>- Employer</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="certifications" class="container my-5">
+        <h3 class="section-title"><i class="fas fa-certificate"></i> Certifications & Achievements</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-graduation-cap fa-3x text-success"></i>
+                <h5 class="mt-3">DOST Scholarship</h5>
+                <p>Issued: 2022</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-book-open fa-3x text-success"></i>
+                <h5 class="mt-3">Dean's Lister</h5>
+                <p>Issued: 1st-2nd Year</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-star fa-3x text-success"></i>
+                <h5 class="mt-3">President's Lister</h5>
+                <p>Issued: 1st-2nd Year</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="container my-5">
+        <h2 class="section-title"><i class="fas fa-calendar text-success"></i> Timeline</h2>
+        <ul class="timeline">
+            <li><strong>2024:</strong> Currently at my third year of college.</li>
+            <li><strong>2024:</strong> Successfully completed my second year of college.</li>
+            <li><strong>2023:</strong> Successfully completed my first year of college.</li>
+            <li><strong>2022:</strong> Began the Information Systems program at TUP.</li>
+            <li><strong>2022:</strong> Graduated from Senior High School at Parañaque Science High School.</li>
+            <li><strong>2020:</strong> Graduated from High School at Nativity Integrated School.</li>
         </ul>
     </section>
-    
 
+        <section id="gallery" class="container my-5">
+            <h2 class="section-title"><i class="fas fa-images text-success"></i> Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="assets/images/Photo1.jpeg" class="img-fluid rounded shadow hover-scale" alt="Gallery Photo 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/images/Photo2.png" class="img-fluid rounded shadow hover-scale" alt="Gallery Photo 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/images/Photo3.jpg" class="img-fluid rounded shadow hover-scale" alt="Gallery Photo 3">
+                </div>
+            </div>
+        </section>
 
-    <section id="faq" class="container my-5">
-        <h3 class="section-title"><i class="fas fa-question-circle"></i> FAQ</h3>
-        <div class="accordion" id="faqAccordion">
-            <!-- FAQ 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faqOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What is your work style when collaborating with others?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        I thrive in collaborative environments and often take initiative in group tasks. I prioritize communication and ensure that deadlines are met effectively.
+        <section id="services" class="container my-5">
+            <h3 class="section-title"><i class="fas fa-briefcase"></i> Services</h3>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-4x text-success"></i>
+                    <h5 class="mt-3">Web Development</h5>
+                    <p>Building responsive and modern websites tailored to your needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-paint-brush fa-4x text-success"></i>
+                    <h5 class="mt-3">UI/UX Design</h5>
+                    <p>Creating intuitive and visually appealing user interfaces.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-tools fa-4x text-success"></i>
+                    <h5 class="mt-3">IT Support</h5>
+                    <p>Providing technical assistance to ensure smooth system functionality.</p>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <i class="fas fa-chart-line fa-4x text-success"></i>
+                    <h5 class="mt-3">Data Analysis</h5>
+                    <p>Analyzing and interpreting data to drive informed decisions.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cogs fa-4x text-success"></i>
+                    <h5 class="mt-3">System Development</h5>
+                    <p>Designing and building efficient systems for your organization.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-search fa-4x text-success"></i>
+                    <h5 class="mt-3">SEO Optimization</h5>
+                    <p>Optimizing websites for better visibility in search engine results.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bootcamps" class="container my-5">
+            <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Bootcamps of Interest</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/images/Bootcamp1.PNG" class="card-img-top" alt="ChatGPT & Digital Marketing Bootcamp">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ChatGPT & Digital Marketing</h5>
+                            <p class="card-text">Learn to leverage AI tools like ChatGPT and MidJourney for marketing strategies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/images/Bootcamp2.PNG" class="card-img-top" alt="Python Programming Bootcamp">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Python Programming Bootcamp</h5>
+                            <p class="card-text">Master Python from basics to advanced, building applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/images/Bootcamp3.PNG" class="card-img-top" alt="Unity Game Development Bootcamp">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Unity Game Development</h5>
+                            <p class="card-text">Create 2D games using Unity and C#, learning game design and programming fundamentals.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- FAQ 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faqTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What are your strengths in project work?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        I excel at organizing tasks, ensuring clear workflows, and paying attention to detail in coding and design. I also adapt well to new tools and frameworks.
+        </section>
+      
+        <section id="tools" class="container my-5">
+            <h3 class="section-title"><i class="fas fa-tools"></i> Tools & Technologies</h3>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fas fa-code fa-3x text-secondary"></i>
+                    <p>Visual Studio Code</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-github fa-3x text-secondary"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-figma fa-3x text-secondary"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-html5 fa-3x text-secondary"></i>
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-3">
+                    <i class="fab fa-css3-alt fa-3x text-secondary"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-js-square fa-3x text-secondary"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-terminal fa-3x text-secondary"></i>
+                    <p>C</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-code fa-3x text-secondary"></i>
+                    <p>C++</p>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-3">
+                    <i class="fas fa-database fa-3x text-secondary"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-node-js fa-3x text-secondary"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-laptop-code fa-3x text-secondary"></i>
+                    <p>Code::Blocks</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-bootstrap fa-3x text-secondary"></i>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="fun-facts" class="container my-5">
+            <h3 class="section-title"><i class="fas fa-smile"></i> Fun Facts</h3>
+            <ul>
+                <li>I am an Ambivert.</li>
+                <li>I am a very Awkward Person.</li>
+                <li>I play Valorant.</li>
+                <li>I enjoy Music.</li>
+                <li>I love exploring new coffee shops and trying unique brews.</li>
+            </ul>
+        </section>
+        
+        <section id="faq" class="container my-5">
+            <h3 class="section-title"><i class="fas fa-question-circle"></i> FAQ</h3>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is your work style when collaborating with others?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I thrive in collaborative environments and often take initiative in group tasks. I prioritize communication and ensure that deadlines are met effectively.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What are your strengths in project work?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I excel at organizing tasks, ensuring clear workflows, and paying attention to detail in coding and design. I also adapt well to new tools and frameworks.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What are your goals for learning and development?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I aim to deepen my knowledge in web development, improve my expertise in backend technologies, and explore advanced techniques in user experience design.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What motivates you in your work?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I am motivated by the opportunity to create meaningful projects that solve real-world problems and the ability to learn continuously as technology evolves.
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- FAQ 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faqThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        What are your goals for learning and development?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        I aim to deepen my knowledge in web development, improve my expertise in backend technologies, and explore advanced techniques in user experience design.
-                    </div>
+        </section>
+        
+        <section id="cta" class="text-center my-5">
+            <h3>Ready to Work Together?</h3>
+            <p>Contact me to start your next project!</p>
+            <a href="https://www.linkedin.com/in/jerome-tegrado/" class="btn btn-success btn-lg">Hire Me</a>
+        </section>
+        <section id="resume" class="text-center my-5">
+            <h3>Want to Know More?</h3>
+            <a href="assets/Resume-Tegrado.pdf" class="btn btn-primary btn-lg" download>Download My Resume</a>
+        </section>
+        <section id="contact" class="container my-5">
+            <h2 class="section-title"><i class="fas fa-envelope text-success"></i> Contact</h2>
+            <form action="mailto:tegradojerome@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                 </div>
-            </div>
-            <!-- FAQ 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faqFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        What motivates you in your work?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        I am motivated by the opportunity to create meaningful projects that solve real-world problems and the ability to learn continuously as technology evolves.
-                    </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
                 </div>
-            </div>
-        </div>
-    </section>
-    
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </section>
 
-
-<section id="cta" class="text-center my-5">
-    <h3>Ready to Work Together?</h3>
-    <p>Contact me to start your next project!</p>
-    <a href="https://www.linkedin.com/in/jerome-tegrado/" class="btn btn-success btn-lg">Hire Me</a>
-</section>
-
-<section id="resume" class="text-center my-5">
-    <h3>Want to Know More?</h3>
-    <a href="assets/Resume-Tegrado.pdf" class="btn btn-primary btn-lg" download>Download My Resume</a>
-</section>
-
-<section id="contact" class="container my-5">
-    <h2 class="section-title"><i class="fas fa-envelope text-success"></i> Contact</h2>
-    <form action="mailto:tegradojerome@gmail.com" method="post" enctype="text/plain">
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your Message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Send</button>
-    </form>
-</section>
-
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>© 2024 Jerome Tegrado. All rights reserved. 
-            <a href="#home" class="text-decoration-none text-success"><i class="fas fa-arrow-up"></i> Back to Top</a></p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>© 2024 Jerome Tegrado. All rights reserved. <a href="#home" class="text-decoration-none text-success"><i class="fas fa-arrow-up"></i> Back to Top</a></p>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script> 
 </body>
 </html>
