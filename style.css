@@ -342,10 +342,17 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
+    #gallery {
+        text-align: center;
+    }
+    
     #gallery img {
         width: 100%;
         height: auto;
+        display: inline-block;
+        margin: 0 auto;
     }
+    
 
     #skillsCanvas {
         max-width: 100%;
