@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
@@ -20,10 +19,31 @@ body::-webkit-scrollbar-thumb {
     background-color: #2b302b !important;
 }
 
+section {
+    scroll-margin-top: 80px;
+}
 
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #006400;
+    border-bottom: 2px solid #9acd32;
+    padding-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #9acd32;
+    margin: 10px auto;
+    border-radius: 5px;
+}
 
-/* Navbar */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -48,8 +68,6 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1.1);
 }
 
-
-/* Hero Section */
 .hero-section {
     background: linear-gradient(to bottom, #006400, #9acd32);
     min-height: 80vh;
@@ -60,57 +78,44 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
-
 .hero-section h1,
 .hero-section p {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+#soft-skills i {
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+#soft-skills i:hover {
+    transform: scale(1.3);
+    color: #9acd32;
 }
 
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Section Title */
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    text-align: center;
+#soft-skills h5:hover {
     color: #006400;
-    border-bottom: 2px solid #9acd32;
-    padding-bottom: 10px;
-    animation: fadeIn 1.5s ease-in-out;
+    transition: color 0.3s ease;
 }
 
-/* Projects */
+#soft-skills p:hover {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+#skillsCanvas {
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+.progress-bar {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.progress-bar:hover {
+    box-shadow: 0px 0px 15px rgba(0, 100, 0, 0.5);
+    transform: scaleX(1.02);
+}
+
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: #fff;
@@ -123,21 +128,16 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 4px 15px rgba(0, 100, 0, 0.3);
 }
 
-/* Contact Form */
-button[type="submit"] {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    background-color: #006400;
-    border-color: #006400;
-    color: #fff;
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
 }
 
-button[type="submit"]:hover {
-    transform: translateY(-2px);
-    background-color: #9acd32;
-    border-color: #9acd32;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 100, 0, 0.3);
 }
 
-/* Timeline Styling */
 .timeline {
     list-style: none;
     padding: 0;
@@ -170,20 +170,18 @@ button[type="submit"]:hover {
     z-index: 2;
 }
 
-/* Left and Right Spacing */
 .timeline li:nth-child(odd) {
-    left: 4%; /* Bring the left items closer to the center */
-    margin-right: 1rem; /* Adjust spacing between left items and the center line */
+    left: 4%;
+    margin-right: 1rem;
     animation: slideInFromLeft 1s ease-in-out;
 }
 
 .timeline li:nth-child(even) {
-    left: 49%; /* Adjust the right items for balance */
-    margin-left: 1rem; /* Adjust spacing for right items */
+    left: 49%;
+    margin-left: 1rem;
     animation: slideInFromRight 1s ease-in-out;
 }
 
-/* Timeline Dots */
 .timeline li::before {
     content: '';
     position: absolute;
@@ -199,66 +197,13 @@ button[type="submit"]:hover {
 }
 
 .timeline li:nth-child(odd)::before {
-    right: -20px; /* Position the dot closer to the center for left items */
+    right: -20px;
 }
 
 .timeline li:nth-child(even)::before {
-    left: -20px; /* Position the dot closer to the center for right items */
+    left: -20px;
 }
 
-/* Blinking Animation for Dots */
-@keyframes blink {
-    0%, 100% {
-        background-color: #9acd32;
-        box-shadow: 0 0 10px rgba(0, 100, 0, 0.5);
-    }
-    50% {
-        background-color: #006400;
-        box-shadow: 0 0 5px rgba(0, 100, 0, 0.3);
-    }
-}
-
-/* Smooth Content Appearance */
-.timeline li .timeline-title,
-.timeline li .timeline-content {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.timeline li.appear .timeline-title,
-.timeline li.appear .timeline-content {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Animations for Items */
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-
-
-/* Gallery Styling */
 #gallery img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
@@ -272,8 +217,6 @@ button[type="submit"]:hover {
     box-shadow: 0px 4px 15px rgba(0, 100, 0, 0.3);
 }
 
-
-/* Services Section */
 #services i {
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -296,84 +239,6 @@ button[type="submit"]:hover {
     line-height: 1.5;
 }
 
-/* Section Title Styling */
-.section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #006400;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: #9acd32;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-/* Portfolio Section */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(0, 100, 0, 0.3);
-}
-
-/* FAQ Section */
-.accordion-button {
-    background-color: #006400;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.accordion-button:hover {
-    background-color: #9acd32;
-}
-
-#certifications i {
-    transition: transform 0.3s ease;
-}
-
-#certifications i:hover {
-    transform: scale(1.2);
-    color: #006400;
-}
-
-#certifications h5 {
-    margin-top: 1rem;
-    color: #006400;
-}
-
-#tools i {
-    transition: transform 0.3s ease;
-}
-
-#tools i:hover {
-    transform: scale(1.2);
-    color: #006400;
-}
-
-#tools p {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(0, 100, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 #fun-facts ul {
     list-style: none;
     padding: 0;
@@ -391,68 +256,16 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
-.testimonial {
-    background-color: #f9f9f9;
-    border-left: 4px solid #4caf50;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-.testimonial blockquote {
-    margin: 0;
-    padding: 0;
-}
-.testimonial cite {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
+.accordion-button {
+    background-color: #006400;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-
-#skillsCanvas {
-    max-width: 100%; /* Makes the canvas responsive */
-    margin: 1rem auto;
+.accordion-button:hover {
+    background-color: #9acd32;
 }
 
-/* Hover Effects for Personal Attributes Icons */
-#soft-skills i {
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-#soft-skills i:hover {
-    transform: scale(1.3);
-    color: #9acd32;
-}
-
-/* Optional: Add hover effects for titles and descriptions */
-#soft-skills h5:hover {
-    color: #006400;
-    transition: color 0.3s ease;
-}
-
-#soft-skills p:hover {
-    color: #555;
-    transition: color 0.3s ease;
-}
-
-/* Hover Effects for Progress Bars */
-.progress-bar {
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.progress-bar:hover {
-    box-shadow: 0px 0px 15px rgba(0, 100, 0, 0.5); /* Greenish glow effect */
-    transform: scaleX(1.02); /* Slight horizontal expansion for emphasis */
-}
-
-section {
-    scroll-margin-top: 80px; /* Adjust based on your navbar height */
-}
-
-
-
-/* Footer */
 footer {
     background-color: #006400;
     color: #fff;
@@ -468,5 +281,3 @@ footer a {
 footer a:hover {
     color: #fff;
 }
-
-
