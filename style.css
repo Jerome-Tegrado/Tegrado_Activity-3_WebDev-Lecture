@@ -47,11 +47,24 @@ section {
 .navbar-brand {
     display: flex;
     align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    transition: letter-spacing 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover {
+    letter-spacing: 1px; 
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.6); 
 }
 
 .navbar-brand i {
     margin-right: 8px;
-    color: #9acd32;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover i {
+    transform: rotate(15deg); 
 }
 
 .nav-link:hover {
