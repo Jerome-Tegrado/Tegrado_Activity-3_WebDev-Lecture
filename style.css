@@ -308,3 +308,118 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .timeline li {
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+
+    .timeline li:nth-child(odd),
+    .timeline li:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline li::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #skillsCanvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .progress-bar {
+        font-size: 0.8rem;
+    }
+
+    #fun-facts ul {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    #contact form {
+        padding: 10px;
+    }
+
+    #contact .form-label {
+        font-size: 0.9rem;
+    }
+
+    #contact .form-control {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    #fun-facts ul {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
