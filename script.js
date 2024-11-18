@@ -122,15 +122,19 @@ backToTopButton.style.display = 'none';
 backToTopButton.style.backgroundColor = '#006400';
 backToTopButton.style.color = '#fff';
 backToTopButton.style.border = 'none';
-backToTopButton.style.padding = '10px 15px';
-backToTopButton.style.borderRadius = '50%';
+backToTopButton.style.padding = '10px 30px'; 
+backToTopButton.style.borderRadius = '25px';
+backToTopButton.style.fontSize = '16px';
 backToTopButton.style.cursor = 'pointer';
 backToTopButton.style.zIndex = 1000;
+backToTopButton.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.2)';
+backToTopButton.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
 document.body.appendChild(backToTopButton);
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         backToTopButton.style.display = 'block';
+        backToTopButton.style.opacity = '1';
     } else {
         backToTopButton.style.display = 'none';
     }
@@ -139,3 +143,4 @@ window.addEventListener('scroll', () => {
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
