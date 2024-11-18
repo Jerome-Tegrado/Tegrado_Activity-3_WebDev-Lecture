@@ -72,6 +72,7 @@ section {
     transition: color 0.3s ease;
 }
 
+
 .nav-item a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -80,6 +81,19 @@ section {
     color: #9acd32 !important;
     transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+    .nav-item a {
+        transition: none; 
+    }
+
+    .nav-item a:hover {
+        color: #9acd32 !important;
+        transform: none; 
+    }
+}
+
 
 .hero-section {
     background: linear-gradient(to bottom, #006400, #9acd32);
