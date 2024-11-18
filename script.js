@@ -1,13 +1,14 @@
-// Smooth Scroll for Navigation
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function (e) {
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({
+            top: target.offsetTop - document.querySelector('.navbar').offsetHeight - 20, // Adds space above
+            behavior: 'smooth'
+        });
     });
 });
 
-// Gallery Animation
 const galleryImages = document.querySelectorAll('#gallery img');
 galleryImages.forEach(image => {
     image.addEventListener('mouseover', () => {
@@ -21,7 +22,6 @@ galleryImages.forEach(image => {
     });
 });
 
-// Timeline Animation on Scroll
 const timelineItems = document.querySelectorAll('.timeline li');
 const timelineObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -37,12 +37,56 @@ const timelineObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 timelineItems.forEach(item => {
-    item.style.opacity = 0; // Initial state
+    item.style.opacity = 0;
     item.style.transform = 'translateY(20px)';
     timelineObserver.observe(item);
 });
 
-// Contact Form Feedback
+const portfolioCards = document.querySelectorAll('.card');
+portfolioCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.transform = 'scale(1.05)';
+        card.style.transition = 'transform 0.3s ease';
+    });
+    card.addEventListener('mouseout', () => {
+        card.style.transform = 'scale(1)';
+    });
+});
+
+const ctx = document.getElementById('skillsCanvas').getContext('2d');
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Eat', 'Sleep', 'Phone', 'Desktop'],
+        datasets: [{
+            data: [90, 90, 90, 90],
+            backgroundColor: [
+                '#006400',
+                '#9acd32',
+                '#f4a261',
+                '#2a9d8f',
+                '#264653'
+            ],
+            borderColor: '#fff',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    color: '#333',
+                    font: {
+                        size: 14
+                    }
+                }
+            }
+        }
+    }
+});
+
 document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
@@ -51,13 +95,23 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
     if (name && email && message) {
         alert(`Thank you, ${name}! Your message has been sent successfully.`);
-        this.reset(); // Reset form fields
+        this.reset();
     } else {
         alert('Please fill in all fields before submitting.');
     }
 });
 
-// Back to Top Button
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const allPanels = document.querySelectorAll('.accordion-collapse');
+        allPanels.forEach(panel => {
+            if (!button.classList.contains('collapsed')) {
+                panel.classList.remove('show');
+            }
+        });
+    });
+});
+
 const backToTopButton = document.createElement('button');
 backToTopButton.innerText = '⬆';
 backToTopButton.classList.add('back-to-top');
@@ -74,7 +128,6 @@ backToTopButton.style.cursor = 'pointer';
 backToTopButton.style.zIndex = 1000;
 document.body.appendChild(backToTopButton);
 
-// Show/Hide Back to Top Button
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         backToTopButton.style.display = 'block';
@@ -83,84 +136,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Scroll to Top
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// IntersectionObserver to handle animations
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('appear'); // Add the "appear" class when in view
-        } else {
-            entry.target.classList.remove('appear'); // Remove the "appear" class when out of view
-        }
-    });
-}, { threshold: 0.3 }); // Trigger the animation when 30% of the item is visible
-
-timelineItems.forEach(item => {
-    item.style.opacity = 0; // Initial state (hidden)
-    observer.observe(item);
-});
-
-// Add hover effects for portfolio cards
-const portfolioCards = document.querySelectorAll('.card');
-portfolioCards.forEach(card => {
-    card.addEventListener('mouseover', () => {
-        card.style.transform = 'scale(1.05)';
-        card.style.transition = 'transform 0.3s ease';
-    });
-    card.addEventListener('mouseout', () => {
-        card.style.transform = 'scale(1)';
-    });
-});
-
-// Initialize Bootstrap Accordion
-document.querySelectorAll('.accordion-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const allPanels = document.querySelectorAll('.accordion-collapse');
-        allPanels.forEach(panel => {
-            if (!button.classList.contains('collapsed')) {
-                panel.classList.remove('show');
-            }
-        });
-    });
-});
-
-// Skills Chart using Chart.js
-const ctx = document.getElementById('skillsCanvas').getContext('2d');
-
-// Data for the chart
-new Chart(ctx, {
-    type: 'pie', // You can use 'doughnut' or 'bar' for different visuals
-    data: {
-        labels: ['Eat', 'Sleep', 'Phone', 'Desktop'], // Skill labels
-        datasets: [{
-            data: [90, 90, 90, 90], // Percentage values for each skill
-            backgroundColor: [
-                '#006400', // Green for HTML
-                '#9acd32', // Light Green for CSS
-                '#f4a261', // Orange for JavaScript
-                '#2a9d8f', // Blue-green for C++
-                '#264653'  // Dark Blue for UI/UX
-            ],
-            borderColor: '#fff',
-            borderWidth: 2
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'bottom', // Legend position
-                labels: {
-                    color: '#333', // Legend text color
-                    font: {
-                        size: 14
-                    }
-                }
-            }
-        }
-    }
 });
