@@ -462,16 +462,6 @@ footer a:hover {
     text-shadow: 0 0 5px rgba(154, 205, 50, 0.8);
 }
 
-.hero-section h1:hover {
-    text-decoration: underline;
-    letter-spacing: 2px;
-}
-
-.hero-section p:hover {
-    font-style: italic;
-    text-decoration: underline dotted;
-}
-
 .card:hover {
     transform: scale(1.03);
     box-shadow: 0px 4px 15px rgba(0, 100, 0, 0.3);
