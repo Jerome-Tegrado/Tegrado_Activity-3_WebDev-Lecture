@@ -135,9 +135,9 @@ const ctx = document.getElementById('skillsCanvas').getContext('2d');
 new Chart(ctx, {
     type: 'pie', // You can use 'doughnut' or 'bar' for different visuals
     data: {
-        labels: ['HTML', 'CSS', 'JavaScript', 'C++', 'UI/UX'], // Skill labels
+        labels: ['Eat', 'Sleep', 'Phone', 'Desktop'], // Skill labels
         datasets: [{
-            data: [90, 85, 75, 70, 80], // Percentage values for each skill
+            data: [90, 90, 90, 90], // Percentage values for each skill
             backgroundColor: [
                 '#006400', // Green for HTML
                 '#9acd32', // Light Green for CSS
