@@ -114,7 +114,7 @@ document.querySelectorAll('.accordion-button').forEach(button => {
 
 const backToTopLink = document.createElement('a');
 backToTopLink.href = '#';
-backToTopLink.style.backgroundImage = "url('assets/images/up-arrow.png')";
+backToTopLink.style.backgroundImage = "url('assets/images/up-arrow.webp')";
 backToTopLink.style.backgroundSize = 'cover';
 backToTopLink.style.backgroundRepeat = 'no-repeat';
 backToTopLink.style.backgroundPosition = 'center';
