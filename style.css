@@ -44,6 +44,11 @@ section {
     border-radius: 5px;
 }
 
+.navbar {
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
 .navbar-brand {
     display: flex;
     align-items: center;
