@@ -112,51 +112,53 @@ document.querySelectorAll('.accordion-button').forEach(button => {
     });
 });
 
-const backToTopButton = document.createElement('button');
-backToTopButton.innerHTML = `<span style="
-    display: inline-block;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 0;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-">↑</span>`;
-backToTopButton.classList.add('back-to-top');
-backToTopButton.style.position = 'fixed';
-backToTopButton.style.bottom = '20px';
-backToTopButton.style.right = '20px';
-backToTopButton.style.display = 'none';
-backToTopButton.style.color = '#fff';
-backToTopButton.style.border = 'none';
-backToTopButton.style.padding = '10px 30px';
-backToTopButton.style.borderRadius = '25px';
-backToTopButton.style.cursor = 'pointer';
-backToTopButton.style.zIndex = 1000;
-backToTopButton.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.2)';
-backToTopButton.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-backToTopButton.style.animation = 'colorChange 3s infinite';
-document.body.appendChild(backToTopButton);
+const backToTopLink = document.createElement('a');
+backToTopLink.href = '#';
+backToTopLink.style.backgroundImage = "url('assets/images/up-arrow.png')";
+backToTopLink.style.backgroundSize = 'cover';
+backToTopLink.style.backgroundRepeat = 'no-repeat';
+backToTopLink.style.backgroundPosition = 'center';
+backToTopLink.style.width = '50px';
+backToTopLink.style.height = '50px';
+backToTopLink.style.position = 'fixed';
+backToTopLink.style.bottom = '20px';
+backToTopLink.style.right = '20px';
+backToTopLink.style.display = 'none';
+backToTopLink.style.border = 'none';
+backToTopLink.style.borderRadius = '50%';
+backToTopLink.style.cursor = 'pointer';
+backToTopLink.style.zIndex = 1000;
+backToTopLink.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.2)';
+backToTopLink.style.animation = 'scaleEffect 2s infinite, haloEffect 1.5s infinite';
+document.body.appendChild(backToTopLink);
 
 const style = document.createElement('style');
 style.innerHTML = `
-    @keyframes colorChange {
-        0% { background-color: #2b2b2b; }
-        25% { background-color: #3a3a3a; }
-        50% { background-color: #484848; }
-        75% { background-color: #303030; }
-        100% { background-color: #2b2b2b; }
+    @keyframes scaleEffect {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes haloEffect {
+        0%, 100% {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        50% {
+            box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.6);
+        }
     }
 `;
 document.head.appendChild(style);
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
-        backToTopButton.style.display = 'block';
-        backToTopButton.style.opacity = '1';
+        backToTopLink.style.display = 'block';
+        backToTopLink.style.opacity = '1';
     } else {
-        backToTopButton.style.display = 'none';
+        backToTopLink.style.display = 'none';
     }
-});
-
-backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
