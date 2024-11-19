@@ -87,19 +87,6 @@ section {
     transform: scale(1.1);
 }
 
-
-@media (max-width: 768px) {
-    .nav-item a {
-        transition: none; 
-    }
-
-    .nav-item a:hover {
-        color: #9acd32 !important;
-        transform: none; 
-    }
-}
-
-
 .hero-section {
     background: linear-gradient(to bottom, #006400, #9acd32);
     min-height: 80vh;

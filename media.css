@@ -3,6 +3,15 @@
         overflow-x: hidden;
     }
 
+    .nav-item a {
+        transition: none; 
+    }
+
+    .nav-item a:hover {
+        color: #9acd32 !important;
+        transform: none; 
+    }
+
     .navbar-brand {
         font-size: 1.2rem;
     }
